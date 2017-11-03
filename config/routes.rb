@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
   resources :customers
   resources :products
+  
   #get 'welcome/home'
   root to: 'welcome#home'
-  get 'welcome/about'
+  
+  #get 'welcome/about'
+  get '/about' => 'welcome#about'
 
   get 'welcome/contact'
 
