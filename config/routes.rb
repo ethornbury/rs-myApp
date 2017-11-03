@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :customers
   resources :products
   #get 'welcome/home'
   root to: 'welcome#home'
